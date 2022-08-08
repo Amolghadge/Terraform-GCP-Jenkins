@@ -1,3 +1,5 @@
+#This script to create firewall for jenkins.
+
 resource "google_compute_firewall" "Jenkins-External-80" {
   name    = "Jenkins-${var.Jenkins_instance_name}-External-tcp-80"
   project = local.jenkins_network_project_id

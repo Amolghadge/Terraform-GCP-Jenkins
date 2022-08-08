@@ -1,3 +1,4 @@
+//This is output.tf file 
 output "jenkins_vminstance_zone" {
   description = "The zone in which Jenkins is running"
   value       = var.jenkins_instance_zone

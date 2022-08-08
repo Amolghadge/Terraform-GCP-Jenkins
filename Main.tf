@@ -1,6 +1,7 @@
 locals {
 
   // project could be the same as var.project_id or different in case jenkins instance creating in shared VPC (means network belongs to differnet project)
+  
   jenkins_network_project_id = coalesce(var.jenkins_network_project_id, var.project_id)
 
   jenkins_metadata = {
